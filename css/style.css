@@ -1,0 +1,576 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html {height:100%;}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	color: #333;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	float: left;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+a {
+	color: #939393;
+	text-decoration: none;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+a:hover {
+	color: red;
+}
+a, a:hover {
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+.clear {
+	clear: both;
+}
+
+/* Стили для шапки */
+
+header {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fafafa;
+	border-bottom: 2px solid red;
+	height: 25px;
+}
+header #logo {
+	width: 10%;
+	float: left;
+	color: #939393;
+	font-size: 2em;
+	font-family: Times New Roman, sans-serif;
+}
+header #logo span {
+	color: red;
+}
+header #menuHead {
+	width: 70%;
+	float: left;
+	margin-top: 5px;
+}
+
+header #bellIcon {
+	float: right;
+	margin-right:20px;
+	margin-top:-10px;
+}
+header #bellIcon img{
+	width: 45px;
+	height: 45px;
+
+}
+header #notifications_counter {
+width:15px;
+height:15px;
+background-color: red;
+border-radius:50%;
+/*position: relative;
+top:27px;left: -40px; z-index: 5; */
+float:left;
+margin-top:-25px;
+margin-left:5px;
+position:absolute;
+}
+
+.divider_div {
+	width:20px;
+}
+/* Стили для всего документа */
+#wrapper {
+	width: 100%;
+	float: left;
+
+}
+#wrapper #wideLine_div h2 {
+font-weight: 600;
+font-size: 1.2em;
+}
+#wrapper #profile_pic_div #wideLine_div h2 {
+text-align: center;
+}
+#wrapper #profile_pic_div button{
+width: 100%;
+height: 30px;
+color: white;
+background-color: rgba(210,0,0,0.5);
+border:none;
+cursor: pointer;
+}
+#wrapper #profile_pic_div button h2 {
+font-weight: 600;
+font-size: 1.3em;
+text-align: center;
+}
+
+#profile_info_container_div {
+margin: 1% auto 1% auto;
+width:720px;
+background-color: yellow;
+}
+#profile_info_container_div #big_left_side{
+	width: 200px;
+	height: 100%;
+	float:left;
+}
+#profile_info_container_div #big_right_side {
+	width:500px;
+	height:auto;
+	float:left;
+	margin-left: 20px;
+}
+#profile_pic_div{
+background-color: #fafafa;
+height:auto;
+width: 200px;
+float: left;
+padding-bottom: 1%;
+}
+#profile_pic_div img {
+	border:5px solid #fafafa;
+	box-sizing: border-box;
+}
+/* Стили для добавление новой аватарки */
+#dark_wrapper{
+	width: 100%;
+	height:100%;
+	float: left;
+	background-color:rgba(0,0,0,0.5);
+	position: fixed;
+	overflow:none;
+
+}
+button[name="close"]{
+	width:30px;
+	height:30px;
+	background-image:url('/img/cross.png');
+	background-color:rgba(210,0,0,0);
+	background-size:cover;
+	border:none;
+	opacity:0.5;
+	cursor: pointer;
+	float:right;
+}
+button[name="close"]:hover{
+	opacity:1;
+}
+#uploading_avatar_container{
+	width:500px;
+	height:300px;
+	background-color: white;
+	margin: 12.5% auto auto auto;
+}
+#uploading_avatar_div {
+	width: 100%;
+	text-align: left;
+}
+#uploading_avatar_div p{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+}
+
+/* ... */
+
+#wideLine_div{
+width: 100%;
+height: 30px;
+color: white;
+background-color: rgba(210,0,0,0.5);
+}
+#wideLine_div p {
+margin-left: 10px;
+}
+
+#profile_info_div{
+background-color: #fafafa;
+width: 500px;
+float: right;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+#profile_info_div table {
+margin-left: 10px;
+}
+#profile_info_div table th {
+float: left;
+color: DarkGray;
+}
+#profile_info_div table td {
+min-width:10px;
+text-align:left;
+}
+#wideLine_div table {
+	width: 97%;
+}
+#wideLine_div #td2{
+	float: right;
+}
+#friends_list_div {
+	background-color: #fafafa;
+	margin-top: 5px;
+	padding-top:5px;
+	padding-bottom:10px;
+	width: 200px;
+	float: left;
+}
+#wideLine_div a{
+color: white;
+}
+#friends_list_div table p{
+text-align: center;
+}
+#friends_list_div table a{
+color:DimGrey;
+}
+#friends_list_div table a:hover {
+	color: red;
+}
+#friend_circle_avatar {
+width:50px;
+height:50px;	
+margin-top:10px;
+border-radius:50%;
+border:1px solid DimGrey;
+box-sizing: border-box;
+float:left;
+margin-top:20px;
+margin-left:10px;
+position: relative;
+overflow:hidden;
+}
+#friend_circle_avatar:hover {
+	border-color: red;
+}
+#friend_circle_avatar, div:hover {
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+#friend_circle_avatar img{
+	position: absolute;
+}
+#portfolio_div{
+background-color: #fafafa;
+height:auto;
+width: 500px;
+margin-top: 10px;
+float:right;
+padding-top: 10px;
+	overflow: hidden;
+}
+#works_list_div{
+	overflow:auto;
+}
+#works_list_div #wideLine_div {
+	background-color: rgba(0,0,0,0);
+}
+
+#work_info_container{
+	width: 100%;
+	height: 180px;
+	background-color:rgba(200,200,200,1);
+	margin-top:10px;
+	margin-bottom:10px;
+	float: left;
+}
+#work_info_container #left_side {
+	width: 150px;
+	height:100%;
+	float: left;
+	background-color:rgba(105, 105, 105,0.5);
+}
+
+
+#work_info_container #left_side table{
+width: 100%;
+border-collapse: collapse;
+}
+#work_info_container #right_side {
+	height:175px;
+	width: 350px;
+	float: left;
+}
+#folio_pic_div {
+background-color:rgba(0,0,0,0.3);
+height:140px;
+width: 140px;
+float: left;
+margin-left: 5px;
+margin-top: 5px;
+padding-bottom: 1%;
+position: relative;
+overflow: hidden;
+}
+#folio_pic_div img {
+	position: absolute;
+}
+#work_info_div {
+height:100%;
+float: left;
+width:345px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-left: 5px;
+overflow: auto;
+}
+
+#work_info_container:hover{
+	background-color: rgba(200,200,200,0.5);
+}
+
+#work_info_div th {
+text-align: left;
+}
+
+/* Стили для страниц с регистрацией и авторизацией */
+#wrapper #signup_form_div {
+	width:200px;
+	height:auto;
+	background-color: #fafafa;
+	margin: 1% auto 1% auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#wrapper #signup_form_div form input{
+	width:195px;
+}
+
+/* Стили для страницы с редактированием информации о пользователе */
+#edit_profile_info_container_div {
+margin: 1% auto 1% auto;
+width:500px;
+background-color: green;
+}
+
+#edit_profile_info_container_div #profile_info_div
+{
+	width: 100%;
+}
+#edit_profile_info_container_div #profile_info_div select
+{
+	width: 170px;
+}
+#edit_profile_info_container_div #profile_info_div input
+{
+	width: 165px;
+}
+button[name="do_save"]{
+	width:60px;
+	height:60px;
+	background-image:url('grey_typewriter_icon.png');
+	background-color:rgba(210,0,0,0);
+	background-size:cover;
+	border:none;
+	opacity:0.5;
+	cursor: pointer;
+	float:right;
+}
+button[name="do_save"]:hover{
+	opacity:0.7;
+}
+button, button[name="do_save"]:hover {
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+/* Стили для страницы с друзьями */
+#wrapper #friends_list_container {
+	width: 500px;
+	height: 500px;
+	margin: 1% auto 1% auto;
+	background-color: #fafafa;
+	overflow: auto;
+}
+#wrapper #friends_list_container #singleFriend{
+	margin-top: 5px;
+	width:100%;
+	height:80px;
+	background-color: rgba(220,220,220,0.3);
+}
+#wrapper #friends_list_container #singleFriend div table h2 {
+font-weight: 600;font-size: 1.2em;
+}
+#wrapper #friends_list_container #singleFriend:hover {
+	background-color: rgba(255,255,255,0.7);
+}
+#wrapper #friends_list_container #wideLine_div{
+	background-color: rgba(220,220,220,1);
+	height: 30px;
+	border-bottom:2px solid rgba(210,0,0,0.5);
+}
+#wrapper #friends_list_container #wideLine_div div {
+	width: 80px;
+	height:100%;
+	background:none;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+#wrapper #friends_list_container #singleFriend #accept-decline {
+	float:left;
+}
+#wrapper #friends_list_container #singleFriend #accept-decline img {
+	opacity: 0.3;
+	cursor: pointer;
+	height:50px;
+	width:50px;
+	margin-top:5px;
+}
+#wrapper #friends_list_container #singleFriend #accept-decline img:hover {
+	opacity: 0.5;
+	width:60px;
+	height:60px;
+}
+img, img:hover {
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+button[name="user"]{
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+button[name="user"] h3{
+	font-size:1.5em;
+	font-weight: 545;
+}
+/* Стили для страницы с сообщениями*/
+#wrapper #messages_container_div {
+	width:700px;
+	height:505px;
+	background-color: #fafafa;
+	margin: 1% auto 1% auto;
+}
+#wrapper #messages_left_div {
+	width:200px;
+	height: 100%;
+	background-color: #fafafa;
+	float:left;
+	overflow:auto;
+}
+#wrapper #messages_right_div {
+	width:500px;
+	height:100%;
+	background-color: #fafafa;
+	float:left;
+}
+#wrapper #messages_left_div #sender {
+width: 100%;
+height:50px;
+background-color: rgba(0,0,0,0.1);
+margin-bottom:1px;
+}
+#wrapper #messages_left_div #sender #friend_circle_avatar{
+	margin-top:0px;
+}
+#wrapper #messages_right_div #writing_message_container_div{
+	width:100%;
+	height:55px;
+	background-color:silver;
+	position: bottom;
+}	
+#wrapper #messages_right_div #display_messages_div {
+	width: 100%;
+	height:415px;
+
+	background-color: $fafafa;
+}
+#wrapper #messages_right_div #writing_message_container_div textarea{
+width: 440px;
+height:50px;
+resize:none;
+overflow: auto;
+}
+input[name="send_message"] {
+	height:50px;
+	width:50px;
+	height:50px;
+	position:relative;
+	border-radius:50%;
+}
+#input img {
+	width:40px;
+	height:40px;
+position: absolute;
+}
+#writing_message_container_div input[name="send_message"]:hover {
+background-color: rgba(255,255,255,0.5);
+}
+#writing_message_container_div, input:hover {
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+#wrapper #messages_right_div #display_messages_div #single_message {
+margin-top:5px;
+}
+#wrapper #messages_right_div #display_messages_div #single_message #left_side{
+	width: 60px;
+	height:60px;
+	float: left;
+	background-color:rgba(105, 105, 105,0.5);
+	padding-top: -20px;
+}
+#wrapper #messages_right_div #display_messages_div #single_message #right_side{
+	padding-top:20px;
+	padding-left:20px;
+	height:auto;
+	width: 420px;
+	float: left;
+	background-color:rgba(105, 105, 105,0.5);
+}
+/* Стили для Footer */
+footer {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fafafa;
+	border-top: 2px solid red;
+	margin-top: 10px;
+}
+footer #social {
+	float: left;
+}
+footer #social img {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 5px;
+}
+footer #rights {
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-size: 1 em;
+}
